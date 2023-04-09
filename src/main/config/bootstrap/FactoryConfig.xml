@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : SampleConfig.xml.xml
+    Created on : October 22, 2002, 8:02 PM
+    Author     : kevind
+    Description:
+        Purpose of the document follows.
+-->
+
+<root ConfigClassName="com.modelgenerated.foundation.factory.FactoryConfig">
+    <ConfigData>
+        <class interface="com.modelgenerated.authentication.Account" class="com.modelgenerated.authentication.impl.AccountImpl"/>
+        <class interface="com.modelgenerated.authentication.dao.AccountDAO" class="com.modelgenerated.authentication.impl.gen.AccountDAOImpl"/>
+        <class interface="com.modelgenerated.authentication.AccountList" class="com.modelgenerated.authentication.impl.gen.AccountListImpl"/>
+        <class interface="com.modelgenerated.authentication.Tenant" class="com.modelgenerated.authentication.impl.gen.TenantImpl"/>
+        <class interface="com.modelgenerated.authentication.dao.TenantDAO" class="com.modelgenerated.authentication.impl.gen.TenantDAOImpl"/>
+        <class interface="com.modelgenerated.authentication.TenantList" class="com.modelgenerated.authentication.impl.gen.TenantListImpl"/>
+        
+        
+
+        <class interface="com.modelgenerated.audit.Audit" class="com.modelgenerated.audit.impl.gen.AuditImpl"/>
+        <class interface="com.modelgenerated.audit.dao.AuditDAO" class="com.modelgenerated.audit.impl.gen.AuditDAOImpl"/>
+        <class interface="com.modelgenerated.audit.AuditList" class="com.modelgenerated.audit.impl.gen.AuditListImpl"/>
+        <class interface="com.modelgenerated.audit.AuditDetail" class="com.modelgenerated.audit.impl.gen.AuditDetailImpl"/>
+        <class interface="com.modelgenerated.audit.dao.AuditDetailDAO" class="com.modelgenerated.audit.impl.gen.AuditDetailDAOImpl"/>
+        <class interface="com.modelgenerated.audit.AuditDetailList" class="com.modelgenerated.audit.impl.gen.AuditDetailListImpl"/>
+        
+        <class interface="com.modelgenerated.test.Child" class="com.modelgenerated.test.impl.gen.ChildImpl"/>
+        <class interface="com.modelgenerated.test.dao.ChildDAO" class="com.modelgenerated.test.impl.gen.ChildDAOImpl"/>
+        <class interface="com.modelgenerated.test.ChildList" class="com.modelgenerated.test.impl.gen.ChildListImpl"/>
+        
+        <class interface="com.modelgenerated.test.Parent" class="com.modelgenerated.test.impl.gen.ParentImpl"/>
+        <class interface="com.modelgenerated.test.dao.ParentDAO" class="com.modelgenerated.test.impl.gen.ParentDAOImpl"/>
+        <class interface="com.modelgenerated.test.ParentList" class="com.modelgenerated.test.impl.gen.ParentListImpl"/>
+
+    </ConfigData>
+</root>

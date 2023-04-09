@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : Lookup.xml
+    Author     : kevind
+-->
+
+<ObjectDescriptor>
+    <Interface>com.modelgenerated.lookup.Lookup</Interface>
+    <Implementation>com.modelgenerated.lookup.impl.gen.LookupBaseImpl</Implementation>
+    <BaseInterface></BaseInterface>
+    <TableName>Lookup</TableName>
+    <TableAlias>lu</TableAlias>
+    <Fields>
+        <Field>
+            <Name>Name</Name>
+            <ColumnName>Name</ColumnName>
+            <Type>String</Type>
+            <Size>50</Size>
+            <Nullable>yes</Nullable>
+        </Field>
+        <Field>
+            <Name>Description</Name>
+            <ColumnName>Description</ColumnName>
+            <Type>String</Type>
+            <Size>255</Size>
+            <Nullable>yes</Nullable>
+        </Field>
+        <Field>
+            <Name>Feature</Name>
+            <ColumnName>Feature</ColumnName>
+            <Type>String</Type>
+            <Size>50</Size>
+            <Nullable>yes</Nullable>
+        </Field>
+    </Fields>   
+    <References>
+        <Reference>
+            <Name>LookupDataList</Name>
+            <Class>com.modelgenerated.lookup.LookupDataList</Class>
+            <Type>OneToMany</Type>
+            <TargetClass>com.modelgenerated.lookup.LookupData</TargetClass>
+            <TargetMethod>findByParent</TargetMethod>
+        </Reference>
+    </References>
+
+    <Methods>
+        <Method>
+        	<Description>returns lookup data with the supplied code. Otherwise returns null.</Description>
+        	<Prototype>com.modelgenerated.lookup.LookupData getLookupDataByCode(String code)</Prototype>
+        </Method>   
+    </Methods>
+    
+    <Queries>
+        <Query>
+            <Type>FindBy</Type>
+            <MethodName>findByName</MethodName>
+            <FieldName>Name</FieldName>           
+        </Query>
+    </Queries>
+</ObjectDescriptor>

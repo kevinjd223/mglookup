@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : GeneratorConfig.xml
+    Created on : October 22, 2002, 8:02 PM
+    Author     : kevind
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+    <ConfigData>
+        <!-- do we need a multi tenant flag in both place of just on the objects? -->
+        <MultiTenant>yes</MultiTenant>
+        <ModelLocation>/src/main/config/model/Model.xml</ModelLocation>
+        
+        <!-- data access -->
+        <JavaCodeFolder>/src/main/java/</JavaCodeFolder>
+        <JunitFolder>/src/test/java/</JunitFolder>
+        <TestDataFolder>/src/test/java/</TestDataFolder>
+        <DatabaseFolder>/src/main/config/database/</DatabaseFolder>
+        <ObjectFieldSizePath>/src/main/config/bootstrap/</ObjectFieldSizePath>        
+        
+        <!-- struts ui -->
+        <StrutsConfigFile>/webapp/com/modelgenerated/webapp/WEB-INF/config.xml</StrutsConfigFile>
+        <TilesDefFile>/webapp/com/modelgenerated/webapp/WEB-INF/tiles-defs.xml</TilesDefFile>
+        <ResourceFile>/webapp/com/modelgenerated/webapp/resources/ApplicationResources.properties</ResourceFile>
+        <ControllerRoot>/webapp</ControllerRoot>
+        <JspRoot>/webapp/com/modelgenerated/webapp/jsp</JspRoot>
+
+        <!-- project -->
+        <ProjectPrototypeDirectory>/home/kevind/squidinc/source/java/com/modelgenerated/generator/projectgenerator/prototype</ProjectPrototypeDirectory>
+
+        <!-- service -->
+        <EJBConfigFolder>com/modelgenerated/testejb</EJBConfigFolder>
+
+    </ConfigData>
+</root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : Model.xml
+    Author     : kevind
+-->
+
+<Model>
+    <ObjectDescriptorPath>./objectdescriptors</ObjectDescriptorPath>
+    <ScreenDescriptorPath>./screendescriptors</ScreenDescriptorPath>
+    <ServiceDescriptorPath>./servicedescriptors</ServiceDescriptorPath>
+    <PackagesToGenerate>com.modelgenerated</PackagesToGenerate>
+    <Objects>
+        <ObjectDescriptor>Lookup.xml</ObjectDescriptor>
+        <ObjectDescriptor>LookupData.xml</ObjectDescriptor>
+        <ObjectDescriptor>LookupRelation.xml</ObjectDescriptor>
+    </Objects>
+    <Enums>
+    </Enums>
+    <Services>
+    	<Service>LookupService.xml</Service>    
+    </Services>
+</Model>
+
+

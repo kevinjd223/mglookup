@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : QuickbooksIntegrationConfig.xml
+    Created on : October 22, 2002, 8:02 PM
+    Author     : kevind
+    Description:
+        Purpose of the document follows.
+-->
+
+<ConfigData>
+    <EndPoint>http://bigkahuna/QBIntegration</EndPoint>
+    <QuickbooksFile>c:\QBOOKSW2002\test3.QBW</QuickbooksFile>
+</ConfigData>

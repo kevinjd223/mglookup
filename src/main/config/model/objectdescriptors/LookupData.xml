@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : LookupDate.xml
+    Author     : kevind
+-->
+
+<ObjectDescriptor>
+    <Interface>com.modelgenerated.lookup.LookupData</Interface>
+    <Implementation>com.modelgenerated.lookup.impl.gen.LookupDataImpl</Implementation>
+    <BaseInterface></BaseInterface>
+    <TableName>LookupData</TableName>
+    <TableAlias>ld</TableAlias>
+    <Fields>
+        <Field>
+            <Name>Code</Name>
+            <ColumnName>Code</ColumnName>
+            <Type>String</Type>
+            <Size>50</Size>
+            <Nullable>no</Nullable>
+        </Field>
+        <Field>
+            <Name>Display</Name>
+            <ColumnName>Display</ColumnName>
+            <Type>String</Type>
+            <Size>250</Size>
+            <Nullable>yes</Nullable>
+        </Field>
+        <Field>
+            <Name>Status</Name>
+            <ColumnName>Status</ColumnName>
+            <Type>String</Type>
+            <Size>20</Size>
+            <Nullable>yes</Nullable>
+        </Field>
+        <Field>
+            <Name>DisplayStyle</Name>
+            <ColumnName>DisplayStyle</ColumnName>
+            <Type>String</Type>
+            <Size>50</Size>
+            <Nullable>yes</Nullable>
+        </Field>
+        <Field>
+            <Name>SortOrder</Name>
+            <ColumnName>SortOrder</ColumnName>
+            <Type>int</Type>
+            <Nullable>no</Nullable>
+        </Field>
+
+        <!--
+        <Field>
+            <Name>Parent</Name>
+            <ColumnName>LookupId</ColumnName>
+            <Type>Identity</Type>
+            <Nullable>no</Nullable>
+        </Field>
+        -->
+        
+        <Field>
+            <Name>Parent</Name>
+            <ColumnName>LookupId</ColumnName>
+            <Type>Class</Type>
+            <Class>com.modelgenerated.lookup.Lookup</Class>
+            <Alias>lu</Alias>
+            <Nullable>yes</Nullable>
+            <UseInTest>yes</UseInTest>
+        </Field>                
+        
+    </Fields>   
+    
+    <References>
+        <Reference>
+            <Name>LookupRelationships</Name>
+            <Class>com.modelgenerated.lookup.LookupRelationList</Class>
+            <Type>OneToMany</Type>
+            <TargetClass>com.modelgenerated.lookup.LookupRelation</TargetClass>
+            <TargetMethod>findByParent</TargetMethod>
+        </Reference>
+    </References>
+    
+
+    <Queries>
+        <Query>
+            <Type>FindBy-Multi</Type>
+            <MethodName>findByParent</MethodName>
+            <FieldName>Parent</FieldName>
+            <OrderBy>Display</OrderBy>
+        </Query>
+    </Queries>
+    
+    
+</ObjectDescriptor>

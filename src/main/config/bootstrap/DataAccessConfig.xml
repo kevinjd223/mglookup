@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : SampleConfig.xml.xml
+    Created on : October 22, 2002, 8:02 PM
+    Author     : kevind
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+    <ConfigData>
+        <ObjectDescriptorPath>./objectdescriptors</ObjectDescriptorPath>
+        <PackagesToGenerate>com.modelgenerated</PackagesToGenerate>
+        <Objects>
+            <Object>
+                <ValueObjectInterface>com.modelgenerated.authentication.Account</ValueObjectInterface>
+                <DataAccessObjectInterface>com.modelgenerated.authentication.dao.AccountDAO</DataAccessObjectInterface>
+                <Audited>no</Audited>
+            </Object>            
+            <Object>
+                <ValueObjectInterface>com.modelgenerated.authentication.Tenant</ValueObjectInterface>
+                <DataAccessObjectInterface>com.modelgenerated.authentication.dao.TenantDAO</DataAccessObjectInterface>
+                <Audited>no</Audited>
+            </Object>            
+            <Object>
+                <ValueObjectInterface>com.modelgenerated.audit.Audit</ValueObjectInterface>
+                <DataAccessObjectInterface>com.modelgenerated.audit.dao.AuditDAO</DataAccessObjectInterface>
+                <Audited>false</Audited>
+                <ObjectDescriptor>Audit.xml</ObjectDescriptor>
+            </Object>            
+            <Object>
+                <ValueObjectInterface>com.modelgenerated.audit.AuditDetail</ValueObjectInterface>
+                <DataAccessObjectInterface>com.modelgenerated.audit.dao.AuditDetailDAO</DataAccessObjectInterface>
+                <Audited>false</Audited>
+            </Object>
+
+            <Object>
+                <ValueObjectInterface>com.modelgenerated.test.Child</ValueObjectInterface>
+                <DataAccessObjectInterface>com.modelgenerated.test.dao.ChildDAO</DataAccessObjectInterface>
+                <Audited>false</Audited>
+            </Object>
+            <Object>
+                <ValueObjectInterface>com.modelgenerated.test.Parent</ValueObjectInterface>
+                <DataAccessObjectInterface>com.modelgenerated.test.dao.ParentDAO</DataAccessObjectInterface>
+                <Audited>yes</Audited>
+            </Object>
+        </Objects>
+    </ConfigData>
+</root>
