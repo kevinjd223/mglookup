@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : ServiceConfig.xml.xml
+    Created on : December 19, 2002, 8:44 AM
+    Author     : kevind
+    Description:
+        Purpose of the document follows.
+-->
+
+<ConfigData>
+     <DocumentPath>/home/kevind/docdata</DocumentPath>
+</ConfigData>

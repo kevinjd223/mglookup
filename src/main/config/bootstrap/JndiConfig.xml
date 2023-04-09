@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : ServiceConfig.xml.xml
+    Created on : December 19, 2002, 8:44 AM
+    Author     : kevind
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+     <JndiServers>
+         <JndiServer name="default" initialContextFactory="org.jnp.interfaces.NamingContextFactory"
+              providerUrl="localhost:1099" urlPkgPrefixes="org.jboss.naming:org.jnp.interfaces"/>
+         <JndiServer name="other" initialContextFactory="other.namingContextFactory"
+              providerUrl="other:1099" urlPkgPrefixes="org.other"/>
+     </JndiServers>
+ 
+</root>

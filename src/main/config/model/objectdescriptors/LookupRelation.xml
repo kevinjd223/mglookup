@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : LookupRelation.xml
+    Author     : kevind
+-->
+
+<ObjectDescriptor>
+    <Interface>com.modelgenerated.lookup.LookupRelation</Interface>
+    <Implementation>com.modelgenerated.lookup.impl.gen.LookupRelationImpl</Implementation>
+    <TableName>LookupRelation</TableName>
+    <TableAlias>lr</TableAlias>
+    <Fields>
+        <Field>
+            <Name>ParentLookupData</Name>
+            <ColumnName>ParentLookupDataId</ColumnName>
+            <Type>Class</Type>
+            <Class>com.modelgenerated.lookup.LookupData</Class>
+            <Alias>pld</Alias>
+            <Nullable>yes</Nullable>
+            <UseInTest>yes</UseInTest>
+        </Field>                
+        
+        <Field>
+            <Name>ChildLookupData</Name>
+            <ColumnName>ChildLookupDataId</ColumnName>
+            <Type>Class</Type>
+            <Class>com.modelgenerated.lookup.LookupData</Class>
+            <Alias>cld</Alias>
+            <Nullable>yes</Nullable>
+            <UseInTest>yes</UseInTest>
+        </Field>                
+        
+        <Field>
+            <Name>ParentCode</Name>
+            <Type>ReadOnlyJoin</Type>
+            <JoinField>ParentLookupData</JoinField>
+            <ColumnName>ParentLookupData.Code</ColumnName>
+        </Field>
+        <Field>
+            <Name>ParentDisplay</Name>
+            <Type>ReadOnlyJoin</Type>
+            <JoinField>ParentLookupData</JoinField>
+            <ColumnName>ParentLookupData.Display</ColumnName>
+        </Field>
+
+        
+        <Field>
+            <Name>ChildLookup</Name>
+            <Type>ReadOnlyJoin</Type>
+            <JoinField>ChildLookupData</JoinField>
+            <ColumnName>ChildLookupData.Parent.Name</ColumnName>
+        </Field>
+        
+        <Field>
+            <Name>ChildCode</Name>
+            <Type>ReadOnlyJoin</Type>
+            <JoinField>ChildLookupData</JoinField>
+            <ColumnName>ChildLookupData.Code</ColumnName>
+        </Field>
+        <Field>
+            <Name>ChildDisplay</Name>
+            <Type>ReadOnlyJoin</Type>
+            <JoinField>ChildLookupData</JoinField>
+            <ColumnName>ChildLookupData.Display</ColumnName>
+        </Field>
+        
+        
+    </Fields>   
+    
+    
+    <Queries>
+        <Query>
+            <Type>FindBy-Multi</Type>
+            <MethodName>findByParent</MethodName>
+            <FieldName>ParentLookupData</FieldName>           
+        </Query>
+    </Queries>
+</ObjectDescriptor>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : SampleConfig.xml.xml
+    Created on : October 22, 2002, 8:02 PM
+    Author     : kevind
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+    <ConfigData>
+        <jndiconnection name="default" jndiName="java:/jdbc/mgtest"/>
+ 
+        <connection name="default_jdbs" driverName="com.microsoft.sqlserver.jdbc.SQLServerDriver" connectionString="jdbc:sqlserver://localhost\sqlexpress:1433;database=mgtest;user=mgtest;password=mgtest;"/>
+
+        <connection name="default_old" driverName="com.mysql.jdbc.Driver" connectionString="jdbc:mysql://localhost/squid1?user=root&amp;password="/>
+        
+        <connection name="default_jdbc" driverName="com.mysql.jdbc.Driver" connectionString="jdbc:mysql://localhost/squid1?user=root&amp;password="/>
+        <jndiconnection name="default_jndi" jndiName="java:/MySqlDS"/>
+    </ConfigData>
+</root>

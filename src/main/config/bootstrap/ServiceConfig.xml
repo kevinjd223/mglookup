@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : ServiceConfig.xml.xml
+    Created on : December 19, 2002, 8:44 AM
+    Author     : kevind
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+     <Services>
+        <Service>
+             <Name>java:app/modelgenerated/AuthenticationService!com.modelgenerated.authentication.AuthenticationServiceHome</Name>
+             <Remote>com.modelgenerated.authentication.AuthenticationService</Remote>
+             <Home>com.modelgenerated.authentication.AuthenticationServiceHome</Home>
+             <EjbClass>com.modelgenerated.authentication.AuthenticationServiceBean</EjbClass>
+             <JndiServer>default</JndiServer>
+         </Service>
+         <Service>
+             <Name>java:app/modelgenerated/DocumentService!com.modelgenerated.document.DocumentServiceHome</Name>
+             <Remote>com.modelgenerated.document.DocumentService</Remote>
+             <Home>com.modelgenerated.document.DocumentServiceHome</Home>
+             <EjbClass>com.modelgenerated.document.DocumentServiceBean</EjbClass>
+             <JndiServer>default</JndiServer>
+         </Service>
+         <Service> 
+             <Name>java:app/modelgenerated/LookupService!com.modelgenerated.lookup.LookupServiceHome</Name>
+             <Remote>com.modelgenerated.lookup.LookupService</Remote>
+             <Home>com.modelgenerated.lookup.LookupServiceHome</Home>
+             <EjbClass>com.modelgenerated.lookup.LookupServiceBean</EjbClass>
+             <JndiServer>default</JndiServer>
+         </Service>
+
+         <Service>
+             <Name>java:app/modelgenerated/TestService!com.modelgenerated.test.MyServiceHome</Name>
+             <Remote>com.modelgenerated.test.TestService</Remote>
+             <Home>com.modelgenerated.test.TestServiceHome</Home>
+             <EjbClass>com.modelgenerated.test.TestServiceBean</EjbClass>
+             <JndiServer>default</JndiServer>
+             <EjbVersion>2</EjbVersion>
+         </Service>
+
+         <Service>
+             <Remote>com.modelgenerated.domain.security.SecurityService</Remote>
+             <Name>SecurityService</Name>
+             <Home>com.modelgenerated.domain.security.SecurityServiceHome</Home>
+             <EjbClass>com.modelgenerated.domain.security.SecurityServiceBean</EjbClass>
+             <JndiServer>default</JndiServer>
+         </Service>
+         <Service>
+             <Remote>com.modelgenerated.workflow.WorkflowService</Remote>
+             <Name>Workflow Service</Name>
+             <Home>com.modelgenerated.workflow.WorkflowServiceHome</Home>
+             <EjbClass>com.modelgenerated.workflow.WorkflowServiceBean</EjbClass>
+             <JndiServer>default</JndiServer>
+         </Service>
+     </Services> 
+</root>

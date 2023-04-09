@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : LookupService.xml
+-->
+
+<ScreenDescriptor>
+    <EjbName>Lookup Service</EjbName>
+    <HomeName>com.modelgenerated.lookup.LookupServiceHome</HomeName>
+    <RemoteName>com.modelgenerated.lookup.LookupService</RemoteName>
+    <EjbClassName>com.modelgenerated.lookup.LookupServiceCrud</EjbClassName>
+    <EjbVersion>3</EjbVersion>
+
+    <CrudObjects>
+        <CrudObject>
+        	<ObjectClass>com.modelgenerated.lookup.Lookup</ObjectClass>
+        	<GenerateListMethods>yes</GenerateListMethods>
+        	<GenerateSearchMethod>yes</GenerateSearchMethod>
+        </CrudObject>   
+        <CrudObject>
+        	<ObjectClass>com.modelgenerated.lookup.LookupData</ObjectClass>
+        	<GenerateListMethods>yes</GenerateListMethods>
+        	<GenerateSearchMethod>yes</GenerateSearchMethod>
+        </CrudObject>
+        <CrudObject>
+        	<ObjectClass>com.modelgenerated.lookup.LookupRelation</ObjectClass>
+        	<GenerateListMethods>yes</GenerateListMethods>
+        	<GenerateSearchMethod>yes</GenerateSearchMethod>
+        </CrudObject>
+    </CrudObjects>
+    <Methods>
+        <Method>
+        	<Description>Finds an Lookup by name
+        	</Description>
+        	<Prototype>com.modelgenerated.lookup.Lookup findLookupByName(UserContext userContext, String name)</Prototype>
+        </Method>   
+        <Method>
+        	<Description>Finds an Lookup by name and lookup data code
+        	</Description>
+        	<Prototype>com.modelgenerated.lookup.LookupData findLookupData(UserContext userContext, String lookupName, String code)</Prototype>
+        </Method>   
+        <Method>
+        	<Description>Finds an Lookup and lookup data code
+        	</Description>
+        	<Prototype>com.modelgenerated.lookup.LookupData findLookupData(UserContext userContext, com.modelgenerated.lookup.Lookup lookup, String code)</Prototype>
+        </Method>   
+    </Methods>
+    
+    
+</ScreenDescriptor>
