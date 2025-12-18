@@ -1,0 +1,15 @@
+/target/
+/src/main/config/database/mssql/*.*
+/src/main/config/database/mysql/tables/*.*
+/src/main/config/database/mysql/tablesrecreateIndexesMysql.sql
+/src/main/java/com/modelgenerated/lookup/impl/gen/*.java
+/src/main/java/com/modelgenerated/lookup/dao/*.java
+
+/src/main/java/com/modelgenerated/lookup/Lookup.java
+/src/main/java/com/modelgenerated/lookup/LookupData.java
+/src/main/java/com/modelgenerated/lookup/LookupDataList.java
+/src/main/java/com/modelgenerated/lookup/LookupList.java
+/src/main/java/com/modelgenerated/lookup/LookupRelation.java
+/src/main/java/com/modelgenerated/lookup/LookupRelationList.java
+/src/main/java/com/modelgenerated/lookup/LookupService.java
+/src/main/java/com/modelgenerated/lookup/LookupServiceCrud.java
