@@ -11,7 +11,7 @@ import com.modelgenerated.lookup.impl.gen.LookupBaseImpl;
 import com.modelgenerated.foundation.debug.Displayable;
 import java.io.Serializable;
 
-public class LookupImpl extends LookupBaseImpl implements Lookup, Serializable, Displayable {
+public class LookupImpl extends LookupBaseImpl implements Lookup, Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Override
